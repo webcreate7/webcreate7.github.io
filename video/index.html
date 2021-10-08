@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動画テスト</title>
+<style>
+    html, body, h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    .video-wrapper{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .video-wrapper>video{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .txt-box{
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 100px;
+        margin: 100px;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    h1{
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 3;
+    }
+</style>
+</head>
+<body>
+    <div class="video-wrapper">
+        <video src="img/v1.mp4" autoplay muted loop></video>
+    </div>
+    <div class="txt-box">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, nostrum rem, cumque perspiciatis at ratione voluptatum quidem quisquam, velit distinctio non! Saepe rerum assumenda dolores voluptates officiis suscipit reprehenderit sunt.</p>
+    </div>
+</body>
+</html>
